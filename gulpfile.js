@@ -51,6 +51,7 @@ gulp.task('default', gulp.series('serve'));
 gulp.task('serveprod', function() {
     connect.server({
       root: ["./app/"],
+      host: '0.0.0.0',
       port: process.env.PORT || 5000, // localhost:5000
       livereload: false
     });
