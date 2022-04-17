@@ -1,6 +1,7 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass')(require('sass'));
+var connect        = require('gulp-connect');
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("app/scss/*.scss")
@@ -46,3 +47,11 @@ gulp.task('serve', gulp.series('sass', function() {
 }));
 
 gulp.task('default', gulp.series('serve'));
+
+gulp.task('serveprod', function() {
+    connect.server({
+      root: ["./app/"],
+      port: process.env.PORT || 5000, // localhost:5000
+      livereload: false
+    });
+  });
