@@ -11374,6 +11374,15 @@ footer hr {
   margin-top: 20px;
   display: block;
 }
+@media (max-width: 721px) {
+  #result-excepts {
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 12px;
+  }
+}
 
 #result-stats {
   font-style: normal;
@@ -11612,6 +11621,6 @@ header button {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 25px;
+  margin: 0px 15px;
   text-decoration: none;
 }
