@@ -13,9 +13,9 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="menu-avatar navbar-toggler" href="profile.html">
+            <img src="./assets/imgs/sample-avatar.png"/>
+        </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -27,12 +27,13 @@
             </li>
           </ul>
           <div class="d-flex right-menu">
-            <div class="grid-icon">
+            <div class="grid-icon" data-bs-toggle="modal" data-bs-target="#apps-modal">
               <img src="./assets/icons/grid.svg"/>
             </div>
-            <div class="menu-avatar">
+     
+            <a class="menu-avatar" href="profile.html">
               <img src="./assets/imgs/sample-avatar.png"/>
-            </div>
+            </a>
           </div>
         </div>
       </nav>
@@ -80,10 +81,77 @@
               </div>
             </form>
             
-            <div class="supported-locales">
+            <div class="supported-locales d-none d-md-block">
               CeBrowser offered in: <a href="#">Hausa</a>  <a href="#">Igbo</a>  <a href="#">Nigeria</a>  <a href="#">Pidgin</a>  <a href="#">Yoruba</a> 
             </div>
-             
+
+            <div class="search-nav-mobile d-md-block d-md-none">
+              <ul class="">
+                <li class="">
+                  <a href="#">Images</a>
+                </li>
+                <li>
+                  <a href="#">Videos</a>
+                </li>
+                <li>
+                  <a href="#">Books</a>
+                </li>
+                <li>
+                  <a href="#">News</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="apps-container d-md-block d-md-none">
+              <h5>Apps</h5>
+              <div class="row">
+                <div class="col-3">
+                  <div class="apps-logo">
+                    <div class="apps-logo-icon">
+                      <img src="./assets/icons/livetv.svg" />
+                    </div>
+                    <div class="apps-logo-text">LiveTv
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="apps-logo">
+                    <div class="apps-logo-icon">
+                      <img src="./assets/icons/pcdl.svg" />
+                    </div>
+                    <div class="apps-logo-text">PCDL
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="apps-logo">
+                    <div class="apps-logo-icon">
+                      <img src="./assets/icons/rhapsody.svg" />
+                    </div>
+                    <div class="apps-logo-text">Healing School
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="apps-logo">
+                    <div class="apps-logo-icon">
+                      <img src="./assets/icons/pcdl.svg" />
+                    </div>
+                    <div class="apps-logo-text">Rhapsody of Realities
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="apps-logo">
+                    <div class="apps-logo-icon">
+                      <img src="./assets/icons/pcdl.svg" />
+                    </div>
+                    <div class="apps-logo-text">Kingschat
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             
           </div>
          
@@ -137,6 +205,70 @@
     <hr/>
     <div class="copyright">©CeBrowserTeam 2022</div>
   </footer>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="apps-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body apps-container">
+        <h5>Loveworld Apps</h5>
+        <div class="row">
+          <div class="col-3">
+            <div class="apps-logo">
+              <div class="apps-logo-icon">
+                <img src="./assets/icons/livetv.svg" />
+              </div>
+              <div class="apps-logo-text">LiveTv
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="apps-logo">
+              <div class="apps-logo-icon">
+                <img src="./assets/icons/pcdl.svg" />
+              </div>
+              <div class="apps-logo-text">PCDL
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="apps-logo">
+              <div class="apps-logo-icon">
+                <img src="./assets/icons/rhapsody.svg" />
+              </div>
+              <div class="apps-logo-text">Healing School
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="apps-logo">
+              <div class="apps-logo-icon">
+                <img src="./assets/icons/pcdl.svg" />
+              </div>
+              <div class="apps-logo-text">Rhapsody of Realities
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="apps-logo">
+              <div class="apps-logo-icon">
+                <img src="./assets/icons/pcdl.svg" />
+              </div>
+              <div class="apps-logo-text">Kingschat
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
   <script src="libs/jquery.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
