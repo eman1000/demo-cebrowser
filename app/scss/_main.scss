@@ -67,9 +67,10 @@ body{
   }
 }
 .search-result-history{
-  position: static;
+  position: absolute;
   width: 100%;
-  bottom: -20px;
+  top: 99%;
+  z-index: 999;
   max-height: 482px;
   background: $white;
   border: 0.3px solid rgba(0, 0, 0, 0.05);
@@ -357,6 +358,9 @@ cite{
         margin-right: 8px;
         display: block;
       }
+      svg{
+        margin-right: 5px;
+      }
     }
   
   }
@@ -400,4 +404,60 @@ cite{
     }
   }
   
+}
+.bottom-wrapper{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.more-text{
+  font-weight: 500;
+  font-size: 23.0372px;
+  line-height: 35px;
+  color: $primary;
+  text-align: center;
+  cursor: pointer;
+}
+
+.related-search-wrapper{
+  margin-top: 25px;
+  .related-search-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .icon-wrapper{
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    /* or 100% */
+
+
+    color: $black;
+  }
+  .related-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.4);
+    border-radius: 25px;
+    padding: 12px;
+    padding-left: 37px;
+    padding-right: 37px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    .icon-wrapper{
+      padding-right: 30px;
+    }
+  }
 }
