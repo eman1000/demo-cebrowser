@@ -26,7 +26,7 @@ $('#apps-modal').on('shown.bs.modal', function () {
 })
 
 $(".scroll-arrow").click(()=>{
-  $("#suggestions").scrollLeft(0);
+  $(".suggestions").scrollLeft(0);
   $("#categories-mobile").scrollLeft(0);
 })
 
