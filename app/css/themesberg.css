@@ -11949,6 +11949,7 @@ header button {
 }
 
 .books-item {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -12010,10 +12011,18 @@ header button {
 }
 
 .news-item {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+}
+@media (max-width: 720px) {
+  .news-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .news-item .news-thumbnail {
   width: 183px;
