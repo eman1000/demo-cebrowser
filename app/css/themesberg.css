@@ -11810,6 +11810,7 @@ header button {
 
 .vid-item {
   margin-top: 40px;
+  cursor: pointer;
 }
 .vid-item h5, .vid-item .h5 {
   font-weight: 400;
