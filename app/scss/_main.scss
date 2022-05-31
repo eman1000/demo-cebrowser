@@ -276,6 +276,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         vertical-align: middle;
 
         svg {
@@ -1094,6 +1095,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 40px;
+    margin-bottom: 10px;
   }
   .icon-wrapper{
     display: flex;

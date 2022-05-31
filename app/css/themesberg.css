@@ -11358,7 +11358,8 @@ footer hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 1px;
+  justify-content: center;
+  vertical-align: middle;
 }
 .category-nav .category-nav-wrapper .category-nav-item .category-nav-icon-text svg {
   margin-left: 8px;
@@ -12048,6 +12049,7 @@ header button {
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 40px;
+  margin-bottom: 10px;
 }
 .news-item .icon-wrapper {
   display: flex;
