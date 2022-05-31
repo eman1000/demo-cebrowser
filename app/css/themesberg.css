@@ -11358,6 +11358,7 @@ footer hr {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 1px;
 }
 .category-nav .category-nav-wrapper .category-nav-item .category-nav-icon-text svg {
   margin-left: 8px;
