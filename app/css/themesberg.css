@@ -11855,6 +11855,21 @@ header button {
   color: rgba(26, 13, 171, 0.8);
   cursor: pointer;
 }
+@media (max-width: 720px) {
+  .vid-item span {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .vid-item h5, .vid-item .h5 {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 .vid-item .thumbnail-wrapper {
   width: 208px;
   height: 137px;

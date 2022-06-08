@@ -867,6 +867,22 @@ header {
 
   }
 
+  @media (max-width: 720px){
+    span{
+      display: -webkit-box !important;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    h5{
+      max-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
   .thumbnail-wrapper {
     width: 208px;
     height: 137px;
