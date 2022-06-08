@@ -11124,6 +11124,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .round-input-wrapper input {
   width: 100%;
   height: 59px;
@@ -11432,6 +11436,19 @@ footer hr {
     border-radius: 5px;
     padding: 12px;
   }
+  #result-excepts span {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #result-excepts h3, #result-excepts .h3 {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 #result-stats {
@@ -11569,6 +11586,7 @@ cite {
   color: #FA3C28;
   text-align: center;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .related-search-wrapper {
@@ -11822,6 +11840,7 @@ header button {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.01em;
+  text-decoration: underline;
 }
 
 .vid-item {
@@ -11973,12 +11992,6 @@ header button {
   justify-content: space-between;
   cursor: pointer;
 }
-@media (max-width: 720px) {
-  .books-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 .books-item .book-thumbnail {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/imgs/jeet-dhanoa-nHH0ivMd9gw-unsplash 2.png");
   background-position: center;
@@ -11989,6 +12002,29 @@ header button {
   margin-right: 25px;
   margin-bottom: 15px;
   border-radius: 5px;
+}
+@media (max-width: 720px) {
+  .books-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .books-item .book-text span {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .books-item .book-text h5, .books-item .book-text .h5 {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .books-item .book-thumbnail {
+    width: 78px;
+    height: 99px;
+  }
 }
 .books-item .book-text {
   flex: 1;
@@ -12035,12 +12071,6 @@ header button {
   justify-content: space-between;
   cursor: pointer;
 }
-@media (max-width: 720px) {
-  .news-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 .news-item .news-thumbnail {
   width: 183px;
   height: 136px;
@@ -12050,6 +12080,25 @@ header button {
   background-repeat: no-repeat;
   margin-right: 40px;
   margin-bottom: 10px;
+}
+@media (max-width: 720px) {
+  .news-item .news-text span {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .news-item .news-text h5, .news-item .news-text .h5 {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .news-item .news-thumbnail {
+    width: 95px;
+    height: 68px;
+  }
 }
 .news-item .icon-wrapper {
   display: flex;
